@@ -1397,11 +1397,15 @@ p {
   padding-right: 180px;
 }
 .features-section .features-inner h2 {
-  font-size: 75px;
+  font-size: 100px;
   font-weight: 700;
   color: #c22031;
   margin-bottom: -5px;
   margin-top: 20px;
+}
+.features-section .features-inner h2 span {
+  font-size: 75px;
+  margin-left: -25px;
 }
 .features-section .features-inner p {
   font-weight: 600;
