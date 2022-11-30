@@ -2815,7 +2815,7 @@ ul.gallery {
   margin-bottom: 38px;
 }
 .banner-inner-section {
-  padding: 12px;
+  border-bottom: 1px solid #cececf;
 }
 .banner-inner-section .banner-text {
   text-align: center;
@@ -2883,12 +2883,24 @@ ul.gallery {
 .table thead th {
   border: none;
 }
-.table-box .table-box-head tr th {
+.table-box ul li {
   padding: 38px 0px;
   font-weight: 500;
   font-size: 22px;
   line-height: 33px;
   text-align: center;
+  width: 33.33%;
+}
+.table-box .nav-tabs {
+  border-bottom: none;
+}
+.table-box .tabs__navigation {
+  justify-content: space-around;
+}
+.table-box .tabs__btn {
+  font-size: 20px !important;
+}
+.table-box ul li a {
   color: #fff;
 }
 .table-box .table-box-head tr th span {

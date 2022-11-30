@@ -165,7 +165,36 @@ if (tabs_lin.length > 0 || tabs_for.length > 0) {
     });
   });
 }
+// Table
+const tabs_table = document.querySelectorAll(".tabs_table");
+const table_list = document.querySelectorAll(".table_list");
 
+if (table_list.length > 0 || tabs_table.length > 0) {
+  function hideTabContent() {
+    table_list.forEach((item) => {
+      item.classList.remove("active");
+    });
+
+    tabs_table.forEach((item) => {
+      item.classList.remove("active");
+    });
+  }
+
+  function showTabContent(i = 0) {
+    table_list[i].classList.add("active");
+    tabs_table[i].classList.add("active");
+  }
+
+  hideTabContent();
+  showTabContent();
+
+  tabs_table.forEach((tabs_table, index) => {
+    tabs_table.addEventListener("click", () => {
+      hideTabContent();
+      showTabContent(index);
+    });
+  });
+}
 /*******************************************************************************************/
 
 $(function () {
