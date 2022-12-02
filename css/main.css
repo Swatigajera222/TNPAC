@@ -553,10 +553,10 @@ p {
   font-size: 14px;
   height: 42px;
   color: #fff;
-  border: 1px solid #999;
-  -webkit-box-shadow: 0px 0px 4px 0px rgba(50, 50, 50, 0.08);
+  border: 1px solid #cbd6e2;
+  /* -webkit-box-shadow: 0px 0px 4px 0px rgba(50, 50, 50, 0.08);
   -moz-box-shadow: 0px 0px 4px 0px rgba(50, 50, 50, 0.08);
-  box-shadow: 0px 0px 4px 0px rgba(50, 50, 50, 0.08);
+  box-shadow: 0px 0px 4px 0px rgba(50, 50, 50, 0.08); */
   background-color: #f5f8fa;
 }
 .form-control::-webkit-input-placeholder {
@@ -588,22 +588,19 @@ p {
   position: relative;
   display: block;
   margin: 0 auto;
-  border: 1px solid #999;
-  background-color: #fff;
   height: 42px;
   border-radius: 5px;
-  -webkit-box-shadow: 0px 0px 4px 0px rgba(50, 50, 50, 0.08);
+  /* -webkit-box-shadow: 0px 0px 4px 0px rgba(50, 50, 50, 0.08);
   -moz-box-shadow: 0px 0px 4px 0px rgba(50, 50, 50, 0.08);
-  box-shadow: 0px 0px 4px 0px rgba(50, 50, 50, 0.08);
+  box-shadow: 0px 0px 4px 0px rgba(50, 50, 50, 0.08); */
   z-index: 2;
 }
 
 .custom-select2 select {
   border: none;
   outline: none;
-  background: transparent;
-  -webkit-appearance: none;
-  -moz-appearance: none;
+  border: 1px solid #cbd6e2;
+  background: #f5f8fa9e !important;
   appearance: none;
   border-radius: 0;
   margin: 0;
@@ -611,6 +608,7 @@ p {
   width: 100%;
   padding: 10px 15px 8px 15px;
   font-size: 14px;
+  border-radius: 3px;
 }
 
 .custom-select2:after {
@@ -697,7 +695,7 @@ p {
 .mainBtn {
   height: 40px;
   transition: 0.4s !important;
-  background: #1a46aa;
+  background: #ff7a59;
   border: solid 0px #fff;
   font-size: 20x !important;
   color: #fff;
@@ -1724,6 +1722,7 @@ ul.list-2 li:before {
   background-size: cover;
   background-repeat: no-repeat;
   padding: 50px 0px 55px 0px;
+  border-bottom: 1px solid #cececf;
 }
 .enquiry-form h3 {
   color: rgb(0, 0, 0);
@@ -3611,6 +3610,11 @@ ul.gallery {
   font-size: 20px;
   color: #fff;
 }
+@media screen and (max-width: 1024px) {
+  .banner-inner-section {
+    padding: 10px 0px 20px;
+  }
+}
 @media screen and (max-width: 991px) {
   .learning-center .learning-inner p {
     width: 100%;
@@ -3630,7 +3634,7 @@ ul.gallery {
     padding: 60px 0px 60px 0px;
   }
   .banner-inner-section .bank-banner {
-    display: none;
+    margin-top: 20px;
   }
   .banner-inner-section {
     padding: 15px 15px 40px 15px;
@@ -3837,6 +3841,12 @@ ul.gallery {
   }
 }
 @media screen and (max-width: 525px) {
+  .banner-inner-section .banner-text {
+    width: 100%;
+  }
+  .bank-banner iframe {
+    height: 250px;
+  }
   .table-section .table-head h3 {
     font-size: 21px;
     line-height: 30px;
